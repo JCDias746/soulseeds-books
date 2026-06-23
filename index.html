@@ -135,6 +135,28 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
   .offer li{text-align:left}
   .author .split-img{min-height:340px}
 }
+/* AJUSTES: mais compacto (mobile/devices) + foto do autor sem cortar */
+.hero h1{font-size:clamp(38px,5.4vw,70px)}
+.hero-left{padding-top:104px}
+.split-img{min-height:400px}
+.split-txt{padding:56px 50px}
+.sec-h{font-size:clamp(27px,3.3vw,42px);margin-bottom:20px}
+.timeline{padding:72px 0}
+.tl-stop .circ{width:82px;height:82px}
+.offer{padding:72px 0}
+.offer h2{font-size:clamp(34px,4.2vw,52px)}
+.offer-cover img{max-width:300px}
+.final{padding:82px 0}
+.final h2{font-size:clamp(30px,4.4vw,54px)}
+/* foto do autor: garante o rosto sempre visivel */
+.author .split-img{background-position:center top}
+@media(max-width:900px){
+  .split-img{min-height:300px}
+  .author .split-img{min-height:380px;background-position:center 18%}
+  .split-txt{padding:44px 26px}
+  .timeline,.offer,.final{padding:56px 0}
+  .hero h1{font-size:clamp(36px,9vw,52px)}
+}
 </style>
 </head>
 <body>
