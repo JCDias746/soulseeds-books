@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--
+  SEND HIM BACK . SoulSeeds Books . main sales page (UK/USA, English)
+  CTA buttons use placeholder https://www.amazon.com/s?k=Send+Him+Back+J.C.+Dias . replace with the store/checkout link when defined.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send Him Back . A true story by J. C. Dias . SoulSeeds Books</title>
+<meta property="og:title" content="Send Him Back . J. C. Dias">
+<meta property="og:description" content="What happens when hope crosses borders and hits a wall. A true story of survival, war, slavery and injustice.">
+<meta property="og:image" content="assets/cover-3d.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0B0B0B;--charcoal:#1A1A1A;--panel:#201d1c;
+  --red:#B22326;--red2:#D33A33;--redburnt:#8B1E1E;--redsoft:rgba(178,35,38,.16);
+  --gold:#C6A15B;--gold2:#E0C283;--goldsoft:rgba(198,161,91,.18);
+  --cream:#EDE7DE;--smoke:#A79E92;--ash:#766E62;
+  --anton:'Anton',Impact,sans-serif;--osw:'Oswald',sans-serif;--inter:'Inter',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--inter);background:var(--black);color:var(--smoke);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.red{color:var(--red2)}
+.gold{color:var(--gold2)}
+.btn{display:inline-block;background:var(--red);color:#fff;font-family:var(--osw);font-weight:600;font-size:15px;letter-spacing:2px;text-transform:uppercase;padding:16px 34px;border-radius:3px;text-decoration:none;transition:.25s;border:none;cursor:pointer}
+.btn:hover{background:var(--red2);transform:translateY(-2px)}
+.eyebrow{font-family:var(--osw);font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:600}
+.h-anton{font-family:var(--anton);text-transform:uppercase;letter-spacing:1px;line-height:.95;color:#F4EFE7}
+
+/* NAV */
+.nav{position:absolute;top:0;left:0;right:0;z-index:30;padding:22px 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--osw);font-weight:700;font-size:17px;letter-spacing:3px;text-transform:uppercase;color:#fff}
+.brand .seed{width:22px;height:22px;color:var(--red2)}
+.brand small{color:var(--gold);font-weight:400;letter-spacing:2px}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{color:var(--smoke);text-decoration:none;font-family:var(--osw);font-size:12px;letter-spacing:2px;text-transform:uppercase;transition:.2s}
+.nav-links a:hover{color:var(--gold2)}
+.nav-links .btn{padding:11px 22px;font-size:12px}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.hero-img{position:absolute;inset:0 0 0 42%;background:url('assets/hero-walk.png') center/cover no-repeat;z-index:0}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--black) 0%,rgba(11,11,11,.55) 30%,transparent 70%)}
+.hero-left{position:relative;z-index:2;padding:120px 0 60px}
+.hero h1{font-family:var(--anton);font-size:clamp(46px,6.4vw,86px);line-height:.92;text-transform:uppercase;color:#F4EFE7;margin:20px 0 26px;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+.hero h1 .red{color:var(--red2);display:block}
+.hero .sub{border-left:2px solid var(--red);padding-left:22px;max-width:430px;margin-bottom:34px}
+.hero .sub p{font-size:17px;color:var(--cream);line-height:1.55}
+.hero .sub .last{color:var(--gold2);margin-top:10px;font-weight:500}
+.hero-cover{position:absolute;top:90px;right:4%;width:200px;z-index:3;filter:drop-shadow(0 30px 50px rgba(0,0,0,.7));transform:rotate(0deg)}
+
+/* SECTION base */
+section{position:relative}
+.split{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.split-img{min-height:520px;background-size:cover;background-position:center}
+.split-txt{padding:90px 60px}
+.sec-h{font-family:var(--anton);font-size:clamp(30px,4vw,50px);text-transform:uppercase;color:#F4EFE7;line-height:1;margin-bottom:26px}
+.sec-h .red{color:var(--red2)}
+
+/* SECTION 2 not political */
+.political{background:var(--charcoal)}
+.political .split-txt p{font-size:17px;color:var(--smoke);margin-bottom:8px;line-height:1.6}
+.political .gline{color:var(--gold2);margin-top:18px}
+.political .gline p{color:var(--gold2)}
+
+/* TIMELINE */
+.timeline{background:var(--black);padding:96px 0;text-align:center}
+.timeline .head{font-family:var(--anton);font-size:clamp(26px,3.6vw,44px);text-transform:uppercase;color:#F4EFE7;letter-spacing:1px}
+.timeline .head .gold{color:var(--gold2)}
+.timeline .sub{font-family:var(--osw);font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--red2);margin:10px 0 56px}
+.tl{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;position:relative;max-width:1060px;margin:0 auto}
+.tl::before{content:'';position:absolute;top:48px;left:8%;right:8%;height:1px;border-top:1px dashed rgba(178,35,38,.5);z-index:0}
+.tl-stop{position:relative;z-index:1}
+.tl-stop .circ{width:96px;height:96px;border-radius:50%;margin:0 auto 8px;background-size:cover;background-position:center;border:2px solid var(--goldsoft);box-shadow:0 0 0 4px var(--black)}
+.tl-stop .dot{width:9px;height:9px;border-radius:50%;background:var(--red2);margin:0 auto 14px}
+.tl-stop h4{font-family:var(--osw);font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold2);margin-bottom:6px}
+.tl-stop p{font-size:12.5px;color:var(--ash);line-height:1.4;padding:0 6px}
+
+/* SECTION 4 survive */
+.survive{background:var(--charcoal)}
+.survive .split-txt p{font-size:17px;color:var(--smoke);margin-bottom:14px;line-height:1.65}
+.survive .split-txt .g{color:var(--gold2)}
+
+/* BOOK OFFER */
+.offer{background:linear-gradient(180deg,var(--black),var(--charcoal));padding:96px 0}
+.offer .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.offer-cover img{width:100%;max-width:340px;margin:0 auto;filter:drop-shadow(0 40px 60px rgba(0,0,0,.8))}
+.offer h2{font-family:var(--anton);font-size:clamp(38px,5vw,62px);text-transform:uppercase;color:#F4EFE7;line-height:.95}
+.offer .otitle-sub{font-family:var(--osw);font-size:clamp(15px,1.7vw,19px);letter-spacing:1px;text-transform:uppercase;color:var(--red2);font-weight:600;margin:10px 0 26px;line-height:1.3}
+.offer ul{list-style:none;margin-bottom:32px}
+.offer li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--cream);margin-bottom:12px}
+.offer li::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--red2);margin-top:9px;flex-shrink:0}
+
+/* AUTHOR */
+.author{background:var(--black)}
+.author .split-img{filter:grayscale(1) contrast(1.05)}
+.author .split-txt .role{font-family:var(--anton);font-size:clamp(30px,3.6vw,46px);text-transform:uppercase;color:var(--gold2);letter-spacing:2px;margin-bottom:20px}
+.author .split-txt p{font-size:16px;color:var(--smoke);margin-bottom:16px;line-height:1.7}
+.author .split-txt .credo{color:var(--cream)}
+
+/* FINAL CTA */
+.final{position:relative;text-align:center;padding:120px 0}
+.final-bg{position:absolute;inset:0;background:url('assets/hero-londres.png') center/cover no-repeat;z-index:0;filter:brightness(.4) contrast(1.05)}
+.final-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(80% 100% at 50% 50%,rgba(11,11,11,.55),rgba(11,11,11,.9))}
+.final .wrap{position:relative;z-index:2}
+.final h2{font-family:var(--anton);font-size:clamp(32px,5vw,66px);text-transform:uppercase;color:#F4EFE7;line-height:1;margin-bottom:22px;text-shadow:0 4px 30px rgba(0,0,0,.7)}
+.final h2 .red{color:var(--red2)}
+.final p{font-size:18px;color:var(--cream);max-width:620px;margin:0 auto 36px;line-height:1.6}
+
+/* FOOTER */
+footer{background:var(--black);text-align:center;padding:46px 0;border-top:1px solid rgba(255,255,255,.05)}
+footer .brand{justify-content:center;margin-bottom:8px}
+footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--ash)}
+
+@media(max-width:900px){
+  .nav-links a:not(.btn){display:none}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-img{position:relative;inset:auto;height:300px;order:-1}
+  .hero-img::after{background:linear-gradient(0deg,var(--black),transparent 60%)}
+  .hero-left{padding:40px 0 50px}
+  .hero-cover{display:none}
+  .split{grid-template-columns:1fr}
+  .split-img{min-height:300px;order:-1}
+  .split-txt{padding:48px 32px}
+  .tl{grid-template-columns:1fr 1fr;gap:30px}
+  .tl::before{display:none}
+  .tl-stop .circ{width:110px;height:110px}
+  .offer .wrap{grid-template-columns:1fr;gap:40px;text-align:center}
+  .offer li{text-align:left}
+  .author .split-img{min-height:340px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav"><div class="wrap">
+  <div class="brand"><svg class="seed" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c4 4 6 8 6 12a6 6 0 01-12 0c0-4 2-8 6-12z"/></svg>SoulSeeds <small>Books</small></div>
+  <div class="nav-links">
+    <a href="#story">The Story</a>
+    <a href="#book">The Book</a>
+    <a href="#author">About the Author</a>
+    <a href="https://www.amazon.com/s?k=Send+Him+Back+J.C.+Dias" class="btn">Get the Book</a>
+  </div>
+</div></nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-img"></div>
+  <img class="hero-cover" src="assets/cover-3d.png" alt="Send Him Back, by J. C. Dias">
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="hero-left">
+      <span class="eyebrow">A true story</span>
+      <h1>He lost<br>everything.<span class="red">And kept walking.</span></h1>
+      <div class="sub">
+        <p>War destroyed his village. Slavery stole his freedom. Prison almost took his future.</p>
+        <p class="last">Yet somehow, he survived.</p>
+      </div>
+      <a href="#story" class="btn">Read the Story</a>
+    </div>
+  </div>
+</header>
+
+<!-- SECTION 2 . NOT POLITICAL -->
+<section class="political split" id="story">
+  <div class="split-txt">
+    <h2 class="sec-h">This is not a<br>political book.</h2>
+    <p>It is not about left or right.</p>
+    <p>It is not about immigration statistics.</p>
+    <p>It is not about headlines.</p>
+    <div class="gline">
+      <p>It is about a boy. A village. A journey. A prison cell.</p>
+      <p>And a story the world tried not to hear.</p>
+    </div>
+  </div>
+  <div class="split-img" style="background-image:url('assets/boy.png')"></div>
+</section>
+
+<!-- SECTION 3 . TIMELINE -->
+<section class="timeline">
+  <div class="wrap">
+    <div class="head">From Sudan to a <span class="gold">British prison</span></div>
+    <div class="sub">A real journey</div>
+    <div class="tl">
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/guerra.png')"></div><div class="dot"></div><h4>Sudan</h4><p>A childhood destroyed by war.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/janela.png')"></div><div class="dot"></div><h4>Libya</h4><p>Freedom stolen.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/escravidao.png')"></div><div class="dot"></div><h4>The Desert</h4><p>Survival became the only goal.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/barco.png')"></div><div class="dot"></div><h4>Europe</h4><p>Hope became a dangerous crossing.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/hero-londres.png')"></div><div class="dot"></div><h4>United Kingdom</h4><p>The country he believed would save him.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/prisao.png')"></div><div class="dot"></div><h4>Prison</h4><p>Where hope hit a wall.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 . SURVIVE -->
+<section class="survive split">
+  <div class="split-img" style="background-image:url('assets/prisao.png')"></div>
+  <div class="split-txt">
+    <h2 class="sec-h">How much can one human being survive?</h2>
+    <p>Ashir was not looking for politics. He was not looking for attention. He was looking for <span class="g">safety</span>.</p>
+    <p class="g">But before he reached it, he had to survive what most people cannot even imagine.</p>
+  </div>
+</section>
+
+<!-- SECTION 5 . BOOK OFFER -->
+<section class="offer" id="book">
+  <div class="wrap">
+    <div class="offer-cover"><img src="assets/cover-3d.png" alt="Send Him Back"></div>
+    <div class="offer-txt">
+      <h2>Send Him Back</h2>
+      <div class="otitle-sub">What happens when hope crosses borders and hits a wall</div>
+      <ul>
+        <li>A true story of survival.</li>
+        <li>Inspired by a real man met inside a UK prison.</li>
+        <li>A journey through war, slavery, migration and injustice.</li>
+        <li>Written to be felt, not just read.</li>
+      </ul>
+      <a href="https://www.amazon.com/s?k=Send+Him+Back+J.C.+Dias" class="btn">Get the Book</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6 . AUTHOR -->
+<section class="author split" id="author">
+  <div class="split-img" style="background-image:url('assets/autor.jpg')"></div>
+  <div class="split-txt">
+    <div class="role">J. C. Dias</div>
+    <p>Brazilian immigrant. Author. Executive Director. Former prisoner. Witness to a story that refused to be forgotten.</p>
+    <p class="credo">J. C. Dias met Ashir inside a prison in the United Kingdom. What began as a quiet conversation became a story that followed him beyond the prison walls.</p>
+  </div>
+</section>
+
+<!-- SECTION 7 . FINAL CTA -->
+<section class="final">
+  <div class="final-bg"></div>
+  <div class="wrap">
+    <h2>Some stories should<br>never be <span class="red">forgotten.</span></h2>
+    <p>Before you judge a person by a label, walk with him through the story that gave him scars.</p>
+    <a href="https://www.amazon.com/s?k=Send+Him+Back+J.C.+Dias" class="btn">Start Reading Today</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="brand"><svg class="seed" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c4 4 6 8 6 12a6 6 0 01-12 0c0-4 2-8 6-12z"/></svg>SoulSeeds <small>Books</small></div>
+  <div class="tag">Stories that transform</div>
+</footer>
+
+</body>
+</html>
