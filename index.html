@@ -164,6 +164,13 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
 .split{padding-inline:max(0px,calc((100% - 1140px) / 2))}
 .timeline .tl{max-width:1000px}
 .hero .wrap{max-width:1140px}
+/* SECTION refused to be silenced */
+.silenced{position:relative;text-align:center;padding:108px 0;overflow:hidden}
+.silenced-bg{position:absolute;inset:0;background:url('assets/scarf-survived.jpg') center/cover no-repeat;filter:brightness(.42) contrast(1.05);z-index:0}
+.silenced-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(75% 100% at 50% 50%,rgba(11,11,11,.5),rgba(11,11,11,.92))}
+.silenced .wrap{position:relative;z-index:2}
+.silenced-lines p{font-family:var(--anton);font-size:clamp(26px,3.6vw,44px);text-transform:uppercase;color:#F4EFE7;line-height:1.2;letter-spacing:1px;text-shadow:0 3px 24px rgba(0,0,0,.7)}
+.silenced-lines p.hl{color:var(--red2);margin-top:10px}
 </style>
 </head>
 <body>
@@ -214,7 +221,7 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
 <!-- SECTION 3 . TIMELINE -->
 <section class="timeline">
   <div class="wrap">
-    <div class="head">From Sudan to a <span class="gold">British prison</span></div>
+    <div class="head">From Survival to <span class="gold">Judgement</span></div>
     <div class="sub">A real journey</div>
     <div class="tl">
       <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-sudan.jpg')"></div><div class="dot"></div><h4>Sudan</h4><p>A childhood destroyed by war.</p></div>
@@ -232,8 +239,22 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
   <div class="split-img" style="background-image:url('assets/survive.jpg')"></div>
   <div class="split-txt">
     <h2 class="sec-h">How much can one human being survive?</h2>
-    <p>Ashir was not looking for politics. He was not looking for attention. He was looking for <span class="g">safety</span>.</p>
-    <p class="g">But before he reached it, he had to survive what most people cannot even imagine.</p>
+    <p>He was not looking for attention. He was looking for <span class="g">safety</span>.</p>
+    <p class="g">But first, he had to survive what most cannot even imagine.</p>
+  </div>
+</section>
+
+<!-- SECTION . A TRUE STORY THAT REFUSED TO BE SILENCED -->
+<section class="silenced">
+  <div class="silenced-bg"></div>
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:26px">A true story that refused to be silenced</div>
+    <div class="silenced-lines">
+      <p>Some stories are forgotten.</p>
+      <p>Some are ignored.</p>
+      <p>Some are buried.</p>
+      <p class="hl">This one survived.</p>
+    </div>
   </div>
 </section>
 
@@ -259,9 +280,10 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
 <section class="author split" id="author">
   <div class="split-img" style="background-image:url('assets/autor.jpg')"></div>
   <div class="split-txt">
-    <div class="role">J. C. Dias</div>
-    <p>Brazilian immigrant. Author. Executive Director. Former prisoner. Witness to a story that refused to be forgotten.</p>
-    <p class="credo">J. C. Dias met Ashir inside a prison in the United Kingdom. What began as a quiet conversation became a story that followed him beyond the prison walls.</p>
+    <div class="role">Why I wrote<br>this book</div>
+    <p class="credo">I met Ashir inside a prison in the United Kingdom. His story stayed with me long after the prison gates closed.</p>
+    <p class="credo">I wrote this book because some stories deserve to be remembered.</p>
+    <p style="font-family:var(--osw);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);margin-top:10px">J. C. Dias</p>
   </div>
 </section>
 
