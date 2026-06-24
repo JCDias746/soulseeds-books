@@ -92,6 +92,15 @@ section{position:relative}
 .offer li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--cream);margin-bottom:13px}
 .offer li svg{color:var(--gold2);flex-shrink:0;margin-top:3px}
 
+/* FOUR QUESTIONS */
+.questions{background:#05060c;text-align:center;padding:132px 0;position:relative}
+.questions::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--goldsoft) 50%,transparent)}
+.questions .eyebrow{display:block;margin-bottom:80px}
+.q{font-family:var(--anton);font-size:clamp(38px,6.6vw,96px);line-height:.98;text-transform:uppercase;color:var(--warm);letter-spacing:1px}
+.q.last{color:var(--gold2)}
+.q-arrow{margin:52px auto;color:var(--gold);opacity:.55;width:12px}
+.q-arrow svg{width:12px;height:38px;display:block;margin:0 auto}
+
 /* QUOTE */
 .quote{background:var(--blue);text-align:center;padding:80px 0;border-top:1px solid var(--goldsoft);border-bottom:1px solid var(--goldsoft)}
 .quote p{font-family:var(--serif);font-size:clamp(24px,3.4vw,40px);color:var(--warm);line-height:1.35;max-width:840px;margin:0 auto;font-style:italic}
@@ -106,6 +115,8 @@ section{position:relative}
 .hidden h2{font-family:var(--anton);font-size:clamp(28px,3.6vw,46px);text-transform:uppercase;color:var(--gold2);letter-spacing:2px;margin-bottom:26px}
 .hidden p{font-family:var(--serif);font-size:clamp(19px,2.2vw,26px);color:var(--warm);line-height:1.5;font-style:italic}
 .hidden p .gold{font-style:normal}
+.hidden .signature{margin-top:46px;font-family:var(--serif);font-style:italic;font-size:clamp(21px,2.6vw,32px);color:var(--gold2);line-height:1.45}
+.hidden .signature::before{content:'';display:block;width:48px;height:1px;background:var(--gold);opacity:.55;margin:0 auto 30px}
 
 /* FINAL CTA */
 .final{position:relative;text-align:center;padding:108px 0}
@@ -138,6 +149,10 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
   .nav{padding:16px 0}
   .brand{font-size:15px;letter-spacing:2px}
   .nav-links .btn{padding:10px 16px;font-size:11px;letter-spacing:1px}
+  .questions{padding:78px 0}
+  .questions .eyebrow{margin-bottom:52px}
+  .q-arrow{margin:36px auto}
+  .hidden .signature{margin-top:36px}
 }
 </style>
 </head>
@@ -204,6 +219,20 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
   </div>
 </section>
 
+<!-- SECTION . THE FOUR QUESTIONS -->
+<section class="questions">
+  <div class="wrap">
+    <span class="eyebrow">The four questions</span>
+    <p class="q">Who am I?</p>
+    <div class="q-arrow"><svg viewBox="0 0 12 38" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 0v32M1 27l5 6 5-6"/></svg></div>
+    <p class="q">Why am I here?</p>
+    <div class="q-arrow"><svg viewBox="0 0 12 38" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 0v32M1 27l5 6 5-6"/></svg></div>
+    <p class="q">What am I afraid of?</p>
+    <div class="q-arrow"><svg viewBox="0 0 12 38" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 0v32M1 27l5 6 5-6"/></svg></div>
+    <p class="q last">What am I really<br>searching for?</p>
+  </div>
+</section>
+
 <!-- SECTION 5 . BOOK OFFER -->
 <section class="offer" id="book">
   <div class="wrap">
@@ -237,6 +266,7 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
   <div class="wrap">
     <h2>The hidden chalice</h2>
     <p>Throughout history, people searched for treasure in distant lands. But the greatest treasure was never hidden in a place. <span class="gold">It was hidden inside themselves.</span></p>
+    <p class="signature">The world changes your story.<br>Purpose changes your soul.</p>
   </div>
 </section>
 
