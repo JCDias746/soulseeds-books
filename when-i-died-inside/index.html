@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+  WHEN I DIED INSIDE . SoulSeeds Books . upsell page (spiritual journey, The Alchemist aesthetic)
+  Paleta: deep blue / black / gold / warm white. CTA placeholder ADD_TO_ORDER_LINK (trocar pelo link da oferta).
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When I Died Inside . The journey to the hidden chalice . J. C. Dias</title>
+<meta property="og:title" content="When I Died Inside . J. C. Dias">
+<meta property="og:description" content="Sometimes the person you are searching for is yourself. A spiritual journey to the hidden chalice waiting inside every human soul.">
+<meta property="og:image" content="assets/cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#080A12;--navy:#0C1322;--blue:#101C31;--panel:#16223a;
+  --gold:#C2A05A;--gold2:#E3C988;--goldsoft:rgba(194,160,90,.2);
+  --cream:#E7E1D4;--warm:#F3EEE2;--smoke:#97A0B2;--ash:#69707f;
+  --anton:'Anton',Impact,sans-serif;--osw:'Oswald',sans-serif;--inter:'Inter',system-ui,sans-serif;--serif:'Cormorant Garamond',Georgia,serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--inter);background:var(--black);color:var(--smoke);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 32px}
+.gold{color:var(--gold2)}
+.btn{display:inline-block;white-space:nowrap;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#15110a;font-family:var(--osw);font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;padding:16px 36px;border-radius:3px;text-decoration:none;transition:.25s;box-shadow:0 12px 36px rgba(194,160,90,.18)}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.eyebrow{font-family:var(--osw);font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:600}
+
+/* NAV */
+.nav{position:absolute;top:0;left:0;right:0;z-index:30;padding:22px 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1140px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--osw);font-weight:700;font-size:17px;letter-spacing:3px;text-transform:uppercase;color:#fff}
+.brand small{color:var(--gold);font-weight:400;letter-spacing:2px}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{color:var(--smoke);text-decoration:none;font-family:var(--osw);font-size:12px;letter-spacing:2px;text-transform:uppercase;transition:.2s}
+.nav-links a:hover{color:var(--gold2)}
+.nav-links .btn{padding:11px 22px;font-size:12px}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--black)}
+.hero-img{position:absolute;inset:0 0 0 42%;background:url('assets/hero-pilgrim.jpg') center/cover no-repeat;z-index:0}
+.hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--black) 0%,rgba(8,10,18,.62) 30%,transparent 66%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero-left{padding:120px 0 70px;max-width:560px}
+.hero h1{font-family:var(--anton);font-size:clamp(42px,6vw,80px);line-height:.95;text-transform:uppercase;color:var(--warm);margin:20px 0 24px;text-shadow:0 4px 26px rgba(0,0,0,.6)}
+.hero h1 .gold{color:var(--gold2);display:block}
+.hero .sub{border-left:2px solid var(--gold);padding-left:22px;max-width:440px;margin-bottom:34px}
+.hero .sub p{font-size:17px;color:var(--cream);line-height:1.6}
+
+/* SECTION base */
+section{position:relative}
+.split{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding-inline:max(0px,calc((100% - 1140px) / 2))}
+.split-img{min-height:440px;background-size:cover;background-position:center}
+.split-txt{padding:64px 56px}
+.sec-h{font-family:var(--anton);font-size:clamp(28px,3.6vw,46px);text-transform:uppercase;color:var(--warm);line-height:1.02;margin-bottom:24px}
+.sec-h .gold{color:var(--gold2)}
+
+/* SECTION 2 */
+.pilgrimage{background:var(--navy)}
+.pilgrimage .split-txt p{font-size:18px;color:var(--cream);line-height:1.85;max-width:420px}
+
+/* TIMELINE */
+.timeline{background:var(--blue);padding:80px 0;text-align:center}
+.timeline .head{font-family:var(--anton);font-size:clamp(26px,3.4vw,42px);text-transform:uppercase;color:var(--warm);letter-spacing:1px}
+.timeline .head .gold{color:var(--gold2)}
+.timeline .subt{font-family:var(--osw);font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin:12px 0 52px}
+.tl{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;position:relative;max-width:1060px;margin:0 auto}
+.tl::before{content:'';position:absolute;top:44px;left:7%;right:7%;height:1px;border-top:1px dashed var(--goldsoft);z-index:0}
+.tl-stop{position:relative;z-index:1}
+.tl-stop .circ{width:88px;height:88px;border-radius:50%;margin:0 auto 8px;background-size:cover;background-position:center;border:2px solid var(--goldsoft);box-shadow:0 0 0 4px var(--blue)}
+.tl-stop .dot{width:8px;height:8px;border-radius:50%;background:var(--gold2);margin:0 auto 12px}
+.tl-stop h4{font-family:var(--osw);font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--gold2);margin-bottom:6px}
+.tl-stop p{font-size:12px;color:var(--ash);line-height:1.4;padding:0 4px}
+
+/* SECTION 4 lose yourself */
+.lose{background:var(--navy)}
+.lose .split-txt p{font-size:18px;color:var(--cream);line-height:1.8;max-width:420px}
+
+/* BOOK OFFER */
+.offer{background:linear-gradient(180deg,var(--black),var(--navy));padding:88px 0}
+.offer .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.offer-cover img{width:100%;max-width:360px;margin:0 auto;filter:drop-shadow(0 45px 70px rgba(0,0,0,.85))}
+.offer .ebook{font-family:var(--osw);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.offer h2{font-family:var(--anton);font-size:clamp(36px,4.6vw,58px);text-transform:uppercase;color:var(--warm);line-height:.95}
+.offer .sub2{font-family:var(--osw);font-size:clamp(14px,1.6vw,18px);letter-spacing:1px;text-transform:uppercase;color:var(--gold2);font-weight:500;margin:8px 0 26px}
+.offer ul{list-style:none;margin-bottom:32px}
+.offer li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--cream);margin-bottom:13px}
+.offer li svg{color:var(--gold2);flex-shrink:0;margin-top:3px}
+
+/* QUOTE */
+.quote{background:var(--blue);text-align:center;padding:80px 0;border-top:1px solid var(--goldsoft);border-bottom:1px solid var(--goldsoft)}
+.quote p{font-family:var(--serif);font-size:clamp(24px,3.4vw,40px);color:var(--warm);line-height:1.35;max-width:840px;margin:0 auto;font-style:italic}
+.quote .ch{color:var(--gold2);font-size:30px;margin:0 8px}
+.quote .chalice{width:30px;height:30px;color:var(--gold2);margin:22px auto 0}
+
+/* HIDDEN CHALICE */
+.hidden{position:relative;text-align:center;padding:108px 0;overflow:hidden}
+.hidden-bg{position:absolute;inset:0;background:url('assets/chalice-altar.jpg') center/cover no-repeat;filter:brightness(.5);z-index:0}
+.hidden-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(70% 100% at 50% 50%,rgba(8,10,18,.5),rgba(8,10,18,.93))}
+.hidden .wrap{position:relative;z-index:2;max-width:760px}
+.hidden h2{font-family:var(--anton);font-size:clamp(28px,3.6vw,46px);text-transform:uppercase;color:var(--gold2);letter-spacing:2px;margin-bottom:26px}
+.hidden p{font-family:var(--serif);font-size:clamp(19px,2.2vw,26px);color:var(--warm);line-height:1.5;font-style:italic}
+.hidden p .gold{font-style:normal}
+
+/* FINAL CTA */
+.final{position:relative;text-align:center;padding:108px 0}
+.final-bg{position:absolute;inset:0;background:url('assets/final-dawn.jpg') center/cover no-repeat;filter:brightness(.5);z-index:0}
+.final-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(80% 100% at 50% 50%,rgba(8,10,18,.4),rgba(8,10,18,.9))}
+.final .wrap{position:relative;z-index:2}
+.final h2{font-family:var(--anton);font-size:clamp(32px,4.6vw,60px);text-transform:uppercase;color:var(--warm);line-height:1;margin-bottom:22px;text-shadow:0 4px 30px rgba(0,0,0,.7)}
+.final p{font-size:18px;color:var(--cream);max-width:620px;margin:0 auto 36px;line-height:1.6}
+.final p .gold{color:var(--gold2)}
+
+/* FOOTER */
+footer{background:var(--black);text-align:center;padding:46px 0;border-top:1px solid rgba(255,255,255,.05)}
+footer .brand{justify-content:center;margin-bottom:8px}
+footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--ash)}
+
+@media(max-width:900px){
+  .nav-links a:not(.btn){display:none}
+  .hero{flex-direction:column;align-items:stretch;min-height:auto}
+  .hero-img{position:relative;inset:auto;height:300px;order:-1}
+  .hero-img::after{background:linear-gradient(0deg,var(--black),transparent 60%)}
+  .hero-left{padding:42px 0 52px}
+  .split{grid-template-columns:1fr;padding-inline:0}
+  .split-img{min-height:300px;order:-1}
+  .split-txt{padding:46px 28px}
+  .tl{grid-template-columns:1fr 1fr;gap:28px}
+  .tl::before{display:none}
+  .tl-stop .circ{width:108px;height:108px}
+  .offer .wrap{grid-template-columns:1fr;gap:38px;text-align:center}
+  .offer li{text-align:left}
+  .nav{padding:16px 0}
+  .brand{font-size:15px;letter-spacing:2px}
+  .nav-links .btn{padding:10px 16px;font-size:11px;letter-spacing:1px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav"><div class="wrap">
+  <div class="brand"><svg style="width:18px;height:18px;color:var(--gold)" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c4 4 6 8 6 12a6 6 0 01-12 0c0-4 2-8 6-12z"/></svg>SoulSeeds <small>Books</small></div>
+  <div class="nav-links">
+    <a href="#overview">Overview</a>
+    <a href="#journey">The Journey</a>
+    <a href="#book">The Book</a>
+    <a href="ADD_TO_ORDER_LINK" class="btn">Add to my order</a>
+  </div>
+</div></nav>
+
+<!-- HERO -->
+<header class="hero" id="overview">
+  <div class="hero-img"></div>
+  <div class="wrap">
+    <div class="hero-left">
+      <span class="eyebrow">The second book in the journey</span>
+      <h1>Sometimes the person<br>you are searching for<br><span class="gold">is yourself.</span></h1>
+      <div class="sub">
+        <p>A journey through loss. A journey through faith. A journey toward the hidden chalice waiting inside every human soul.</p>
+      </div>
+      <a href="#journey" class="btn">Continue the journey</a>
+    </div>
+  </div>
+</header>
+
+<!-- SECTION 2 . PILGRIMAGE -->
+<section class="pilgrimage split">
+  <div class="split-txt">
+    <h2 class="sec-h">This is not<br><span class="gold">a self-help book.</span></h2>
+    <p>It is a pilgrimage. A conversation between pain and purpose. Between who you were and who you are becoming. Between death and rebirth.</p>
+  </div>
+  <div class="split-img" style="background-image:url('assets/candle-room.jpg')"></div>
+</section>
+
+<!-- SECTION 3 . TIMELINE -->
+<section class="timeline" id="journey">
+  <div class="wrap">
+    <div class="head">The road to the <span class="gold">hidden chalice</span></div>
+    <div class="subt">Seven movements of the soul</div>
+    <div class="tl">
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-fall.jpg')"></div><div class="dot"></div><h4>The Fall</h4><p>Everything falls apart.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-exile.jpg')"></div><div class="dot"></div><h4>The Exile</h4><p>You lose everything.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-road.jpg')"></div><div class="dot"></div><h4>The Road</h4><p>You walk without answers.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-mentors.jpg')"></div><div class="dot"></div><h4>The Mentors</h4><p>You meet the ones who awaken you.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-trials.jpg')"></div><div class="dot"></div><h4>The Trials</h4><p>What breaks you, shapes you.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-chalice.jpg')"></div><div class="dot"></div><h4>The Chalice</h4><p>You discover what was always there.</p></div>
+      <div class="tl-stop"><div class="circ" style="background-image:url('assets/tl-awakening.jpg')"></div><div class="dot"></div><h4>The Awakening</h4><p>You are reborn from within.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 . LOSE YOURSELF -->
+<section class="lose split">
+  <div class="split-img" style="background-image:url('assets/before-purpose.jpg')"></div>
+  <div class="split-txt">
+    <h2 class="sec-h">Before you find purpose,<br><span class="gold">you must lose yourself.</span></h2>
+    <p>The greatest discoveries are rarely found in distant places. They are found within.</p>
+  </div>
+</section>
+
+<!-- SECTION 5 . BOOK OFFER -->
+<section class="offer" id="book">
+  <div class="wrap">
+    <div class="offer-cover"><img src="assets/cover.png" alt="When I Died Inside"></div>
+    <div class="offer-txt">
+      <div class="ebook">The second book in the journey</div>
+      <h2>When I Died Inside</h2>
+      <div class="sub2">The journey to the hidden chalice</div>
+      <ul>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-11"/></svg>Inspired by real experiences</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-11"/></svg>A spiritual journey through suffering and hope</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-11"/></svg>For readers of The Alchemist and The Pilgrimage</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4 10-11"/></svg>A story that stays with you long after the last page</li>
+      </ul>
+      <a href="ADD_TO_ORDER_LINK" class="btn">Add this to my order</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote">
+  <div class="wrap">
+    <p><span class="ch">&#8220;</span>The greatest prison is not made of iron.<br>It is the one we carry inside.<span class="ch">&#8221;</span></p>
+    <svg class="chalice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M7 3h10l-1 7a4 4 0 01-8 0z"/><path d="M12 14v5M8 21h8"/></svg>
+  </div>
+</section>
+
+<!-- HIDDEN CHALICE -->
+<section class="hidden">
+  <div class="hidden-bg"></div>
+  <div class="wrap">
+    <h2>The hidden chalice</h2>
+    <p>Throughout history, people searched for treasure in distant lands. But the greatest treasure was never hidden in a place. <span class="gold">It was hidden inside themselves.</span></p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="final-bg"></div>
+  <div class="wrap">
+    <h2>The journey<br>is not over.</h2>
+    <p>If Send Him Back showed how a man survives the world... <span class="gold">When I Died Inside reveals how a soul survives itself.</span></p>
+    <a href="ADD_TO_ORDER_LINK" class="btn">Complete the journey</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="brand"><svg style="width:16px;height:16px;color:var(--gold)" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c4 4 6 8 6 12a6 6 0 01-12 0c0-4 2-8 6-12z"/></svg>SoulSeeds <small>Books</small></div>
+  <div class="tag">Stories that transform</div>
+</footer>
+
+</body>
+</html>
