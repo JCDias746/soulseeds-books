@@ -46,7 +46,8 @@ img{display:block;max-width:100%}
 .hero-img{position:absolute;inset:0 0 0 42%;background:url('assets/hero-pilgrim.jpg') center/cover no-repeat;z-index:0}
 .hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--black) 0%,rgba(8,10,18,.62) 30%,transparent 66%)}
 .hero .wrap{position:relative;z-index:2;width:100%}
-.hero-left{padding:120px 0 70px;max-width:560px}
+.hero-left{padding:120px 0 70px;max-width:520px}
+.hero-cover{position:absolute;top:50%;right:6%;transform:translateY(-50%);width:clamp(230px,23vw,340px);z-index:3;filter:drop-shadow(0 40px 70px rgba(0,0,0,.85))}
 .hero h1{font-family:var(--anton);font-size:clamp(42px,6vw,80px);line-height:.95;text-transform:uppercase;color:var(--warm);margin:20px 0 24px;text-shadow:0 4px 26px rgba(0,0,0,.6)}
 .hero h1 .gold{color:var(--gold2);display:block}
 .hero .sub{border-left:2px solid var(--gold);padding-left:22px;max-width:440px;margin-bottom:34px}
@@ -135,6 +136,7 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
 @media(max-width:900px){
   .nav-links a:not(.btn){display:none}
   .hero{flex-direction:column;align-items:stretch;min-height:auto}
+  .hero-cover{display:none}
   .hero-img{position:relative;inset:auto;height:300px;order:-1}
   .hero-img::after{background:linear-gradient(0deg,var(--black),transparent 60%)}
   .hero-left{padding:42px 0 52px}
@@ -172,6 +174,7 @@ footer .tag{font-family:var(--osw);font-size:11px;letter-spacing:4px;text-transf
 <!-- HERO -->
 <header class="hero" id="overview">
   <div class="hero-img"></div>
+  <img class="hero-cover" src="assets/cover.png" alt="When I Died Inside, by J. C. Dias">
   <div class="wrap">
     <div class="hero-left">
       <span class="eyebrow">The second book in the journey</span>
